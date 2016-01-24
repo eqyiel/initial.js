@@ -16,6 +16,7 @@
                 seed: 0,
                 charCount: 1,
                 textColor: "#ffffff",
+                backgroundColor: null,
                 height: 100,
                 width: 100,
                 fontSize: 60,
@@ -51,7 +52,8 @@
                 "width": settings.width,
                 "height": settings.height
             }).css({
-                "background-color": colors[colorIndex],
+                "background-color": (settings.backgroundColor === null)
+                    ? colors[colorIndex] : settings.backgroundColor,
                 "width": settings.width + "px",
                 "height": settings.height + "px",
                 "border-radius": settings.radius + "px",

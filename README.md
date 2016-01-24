@@ -41,6 +41,7 @@ Usage
 | width       | data-width       | Width of the picture                                           | 100                                                                                                |
 | charCount   | data-char-count  | Number of characherts to be shown in the picture.              | 1                                                                                                  |
 | textColor   | data-text-color  | Color of the text                                              | #ffffff                                                                                            |
+| backgroundColor   | data-background-color  | Color of the background.  Randomised based on seed from the name if not given.                                              | null                                                                                            |
 | fontSize    | data-font-size   | Font size of the character(s)                                  | 60                                                                                                 |
 | fontWeight  | data-font-weight | Font weight of the character(s)                                | 400                                                                                                |
 | radius      | data-radius      | Rounded corners                                                | 0                                                                                                  |
