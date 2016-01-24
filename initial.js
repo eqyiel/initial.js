@@ -25,7 +25,8 @@
             settings = $.extend(settings, e.data());
 
             // making the text object
-            var c = settings.name.substr(0, settings.charCount).toUpperCase();
+            var c = settings.name.match(/^(\b[A-Z])[\w\s]+(\b[A-Z])\w+$/);
+            c = (c[1] + c[2]).toUpperCase();
             var cobj = $('<text text-anchor="middle"></text>').attr({
                 'y': '50%',
                 'x': '50%',
